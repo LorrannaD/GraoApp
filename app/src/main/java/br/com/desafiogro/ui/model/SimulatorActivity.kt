@@ -23,7 +23,7 @@ class SimulatorActivity : AppCompatActivity() {
             val num1 = editNumber1.text.toString().toInt()
             val num2  = editNumber2.text.toString().toInt()
             var taxaselic : Double = 4.25
-            val sum =  taxaselic + (1 + num1 + num2/252)
+            val sum =  taxaselic + (1 + num1 ) + num2/252
             textView_resultado.text = "Resultado:" + sum.toString()
             Toast.makeText(this, "Resultado" + textView_resultado.text, Toast.LENGTH_LONG).show()
         }
