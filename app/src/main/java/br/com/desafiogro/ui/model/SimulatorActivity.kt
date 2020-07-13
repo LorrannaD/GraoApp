@@ -14,12 +14,7 @@ class SimulatorActivity : AppCompatActivity() {
         setContentView(R.layout.activity_simulador)
 
         btn_simular.setOnClickListener{
-            if (editNumber1.text.toString().length === 0) {
-                editNumber2.text.get(0)
-            }
-            if (editNumber2.text.toString().length === 0) {
-                editNumber1.text.get(0)
-            }
+
             val num1 = editNumber1.text.toString().toInt()
             val num2  = editNumber2.text.toString().toInt()
             var taxaselic : Double = 4.25
